@@ -478,39 +478,32 @@ p {
     padding-bottom: 0.5rem;
 }
 
-/* Placeholder Images */
-.placeholder-image {
-    margin: 2rem 0;
-    display: flex;
-    justify-content: center;
+/* Wider layout for research cards */
+.research-grid.wide-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
 }
 
-.image-placeholder {
-    background: var(--light-gray);
-    border: 2px dashed var(--sage-green);
-    border-radius: 12px;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: var(--warm-gray);
-    transition: var(--hover-transition);
-    max-width: 300px;
+/* Image wrapper */
+.research-image {
     width: 100%;
-}
-
-.image-placeholder:hover {
-    background: var(--primary-beige);
-    border-color: var(--muted-blue);
-}
-
-.image-placeholder svg {
-    color: var(--sage-green);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f7f9;
+    border: 2px dashed #c2d4d4;
+    border-radius: 12px;
     margin-bottom: 1rem;
 }
 
-.image-placeholder span {
-    display: block;
-    font-size: 0.875rem;
-    font-weight: 500;
+/* Actual image styling */
+.research-illustration {
+    max-width: 100%;
+    max-height: 160px;
+    object-fit: contain;
+    padding: 0.5rem;
 }
 
 /* Footer */
