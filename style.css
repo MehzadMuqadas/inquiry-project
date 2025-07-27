@@ -327,25 +327,30 @@ p {
     background: var(--light-gray);
 }
 
-/* Research Section */
-.research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+.research-grid.wide-boxes {
+    display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
-    margin: 3rem 0;
 }
 
 .research-block {
-    background: var(--white);
-    padding: 2.5rem;
-    border-radius: 16px;
-    box-shadow: 0 6px 25px var(--shadow);
+    flex: 1 1 45%;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 1.75rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.research-image {
+    margin-bottom: 1.25rem;
     text-align: center;
 }
 
-.research-block h3 {
-    color: var(--muted-blue);
-    margin-bottom: 1.5rem;
+.research-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .findings-summary {
