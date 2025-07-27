@@ -352,36 +352,46 @@ p {
     height: auto;
     border-radius: 10px;
 }
-/* Flex layout for image + content */
+
+/* Horizontal layout for research blocks */
 .horizontal-layout {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    margin-bottom: 2.5rem;
-    flex-wrap: wrap; /* ensures it works on smaller screens */
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  background: #fdfdfd;
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.035);
 }
 
+/* Image column */
 .image-column {
-    flex: 0 0 220px;
-    max-width: 220px;
+  flex: 0 0 200px;
+  max-width: 200px;
 }
 
+/* Smaller image with border */
 .research-small-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 2px dashed #c2d4d4;
-    padding: 0.5rem;
-    background-color: #f4f7f9;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px dashed #aacccc;
+  padding: 0.5rem;
+  background-color: #f0f7f7;
 }
 
+/* Text content column */
 .text-column {
-    flex: 1;
-    min-width: 280px;
+  flex: 1;
+  min-width: 280px;
 }
 
 .text-column h3 {
-    margin-top: 0;
+  margin-top: 0;
+  color: #2c3e50;
 }
 
 
