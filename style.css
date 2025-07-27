@@ -688,4 +688,41 @@ p {
     0% { background-position-y: 0px; }
     100% { background-position-y: -40px; }
 }
+/* Inquiry Section Reveal and Animation Styles */
+.reveal-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.reveal-box:hover {
+    animation: shake 0.2s ease;
+    animation-iteration-count: 1;
+}
+
+.box-title {
+    padding: 1rem 1.25rem;
+    font-weight: bold;
+    background-color: #f0f4f4;
+    cursor: pointer;
+}
+
+.box-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1.25rem;
+    color: #333;
+    transition: max-height 0.6s ease, padding 0.6s ease;
+}
+
+.hover-reveal:hover .box-content {
+    max-height: 1000px;
+    padding: 1rem 1.25rem 1.5rem;
+}
+
+@keyframes shake {
+    0% { transform: translat
 
