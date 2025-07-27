@@ -14,12 +14,13 @@ body {
     line-height: 1.6;
     color: #2d3748;
     background-color: #faf8f5;
-    
-    background-image: url('images/pattern-bg.jpg');  /* or .avif/.png if that’s the format */
+
+    background-image: url('images/pattern-bg.jpg');
     background-repeat: repeat;
-    background-size: 400px;  /* You can adjust this for subtlety */
+    background-size: 100px;
     background-attachment: fixed;
 }
+
 
 /* Color Variables */
 :root {
