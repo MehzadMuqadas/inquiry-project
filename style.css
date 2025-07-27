@@ -218,15 +218,18 @@ p {
     justify-content: center;
     margin-top: 2rem;
     padding: 0 1rem;
+    overflow: hidden;
 }
 
 .hero-illustration img {
     width: 100%;
-    max-width: 650px;
+    max-width: 100%;
     height: auto;
-    border-radius: 16px;
+    object-fit: contain;
+    border-radius: 12px;
     box-shadow: 0 8px 24px var(--shadow);
 }
+
 
 /* Section Divider */
 .section-divider {
