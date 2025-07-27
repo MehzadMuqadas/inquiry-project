@@ -334,38 +334,46 @@ p {
   gap: 2rem;
 }
 
-.research-card {
+.vertical-research-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   padding: 1.5rem;
-  flex: 1 1 calc(50% - 1rem);
-  box-sizing: border-box;
+  margin-bottom: 2rem;
+  gap: 2rem;
 }
 
-.research-card-img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: block;
+.research-visual {
+  flex: 0 0 200px;
   border: 2px dashed #a2c2b4;
   border-radius: 12px;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
+  padding: 1rem;
   background-color: #f8f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.research-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  color: #2c3e50;
+.research-img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
 }
 
-.research-card p {
-  margin-bottom: 0.75rem;
-  font-size: 0.95rem;
-  line-height: 1.6;
+.research-text {
+  flex: 1;
 }
+
+.research-text h3 {
+  font-size: 1.25rem;
+  color: #3a534f;
+  margin-bottom: 0.75rem;
+}
+
 
 /* Horizontal layout for research blocks */
 .horizontal-layout {
