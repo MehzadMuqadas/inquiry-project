@@ -213,6 +213,20 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+.hero-illustration {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.hero-illustration img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px var(--shadow);
+}
 
 /* Section Divider */
 .section-divider {
