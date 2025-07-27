@@ -92,6 +92,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.addEventListener('scroll', highlightNavigation);
+    // Center glowing scroll line animation
+const scrollLine = document.querySelector(".scroll-line");
+
+window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = scrollTop / docHeight;
+
+    if (scrollLine) {
+        scrollLine.style.transform = `scaleY(${scrollPercent})`;
+    }
+});
+
 
     // Smooth hover effects for interactive elements
     const interactiveElements = document.querySelectorAll('.content-block, .research-block, .finding-item, .reflection-block, .summary-block, .reference-category');
