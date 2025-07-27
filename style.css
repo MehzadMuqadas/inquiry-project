@@ -333,77 +333,53 @@ p {
   justify-content: space-between;
   gap: 2rem;
 }
-
-.vertical-research-card {
+/* Horizontal layout for research cards */
+.horizontal-research-card {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.035);
   padding: 1.5rem;
-  margin-bottom: 2rem;
   gap: 2rem;
+  margin-bottom: 2.5rem;
+  border: 1px solid #e0e0e0;
+  flex-wrap: wrap;
 }
 
-.research-visual {
-  flex: 0 0 200px;
+/* Image section */
+.research-image-box {
+  flex: 0 0 180px;
+  max-width: 180px;
+  background-color: #f0f7f7;
   border: 2px dashed #a2c2b4;
   border-radius: 12px;
-  padding: 1rem;
-  background-color: #f8f9f9;
+  padding: 0.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.research-img {
+/* Image itself */
+.research-image-box img {
   width: 100%;
-  max-width: 180px;
   height: auto;
   object-fit: contain;
+  display: block;
 }
 
-.research-text {
+/* Text content */
+.research-text-box {
   flex: 1;
 }
 
-.research-text h3 {
+.research-text-box h3 {
   font-size: 1.25rem;
   color: #3a534f;
   margin-bottom: 0.75rem;
 }
 
-
-/* Horizontal layout for research blocks */
-.horizontal-layout {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-bottom: 3rem;
-  flex-wrap: wrap;
-  background: #fdfdfd;
-  border: 1px solid #e0e0e0;
-  padding: 1.5rem;
-  border-radius: 14px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.035);
-}
-
-/* Image column */
-.image-column {
-  flex: 0 0 200px;
-  max-width: 200px;
-}
-
-/* Smaller image with border */
-.research-small-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  border: 2px dashed #aacccc;
-  padding: 0.5rem;
-  background-color: #f0f7f7;
-}
 
 /* Text content column */
 .text-column {
