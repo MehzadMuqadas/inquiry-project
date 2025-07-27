@@ -40,13 +40,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem 0;
+  margin: 2rem auto;
 }
 
 .section-divider img {
-  width: 48px;
+  width: 50px;
   height: auto;
   opacity: 0.6;
+  display: block;
 }
 
 
