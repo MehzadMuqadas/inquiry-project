@@ -688,8 +688,7 @@ p {
     0% { background-position-y: 0px; }
     100% { background-position-y: -40px; }
 }
-/* Inquiry Section Reveal and Animation Styles */
-/* Inquiry Section Reveal and Styling */
+/* Inquiry Section Reveal and Styling - Final Version */
 .reveal-box {
     background-color: #f7fafc;
     border: 1px solid #dce1e7;
@@ -707,6 +706,7 @@ p {
     color: #2c3e50;
     font-size: 1.05rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .box-title:hover {
