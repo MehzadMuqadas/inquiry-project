@@ -689,45 +689,42 @@ p {
     100% { background-position-y: -40px; }
 }
 /* Inquiry Section Reveal and Animation Styles */
+/* Inquiry Section Reveal and Styling */
 .reveal-box {
-    background-color: #ffffff;
+    background-color: #f7fafc;
+    border: 1px solid #dce1e7;
     border-radius: 12px;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
     overflow: hidden;
-    transition: transform 0.2s ease;
-}
-
-.reveal-box:hover {
-    animation: shake 0.2s ease;
-    animation-iteration-count: 1;
+    transition: all 0.3s ease;
 }
 
 .box-title {
-    padding: 1rem 1.25rem;
-    font-weight: bold;
-    background-color: #f0f4f4;
+    padding: 1.2rem 1.5rem;
+    font-weight: 600;
+    background-color: #eaf4f4;
+    color: #2c3e50;
+    font-size: 1.05rem;
     cursor: pointer;
+}
+
+.box-title:hover {
+    background-color: #d3efef;
 }
 
 .box-content {
     max-height: 0;
     overflow: hidden;
-    padding: 0 1.25rem;
+    padding: 0 1.5rem;
     color: #333;
+    background-color: #ffffff;
     transition: max-height 0.6s ease, padding 0.6s ease;
+    font-size: 0.98rem;
+    line-height: 1.6;
 }
 
 .hover-reveal:hover .box-content {
     max-height: 1000px;
-    padding: 1rem 1.25rem 1.5rem;
-}
-
-@keyframes shake {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(-2px); }
-    40% { transform: translateX(2px); }
-    60% { transform: translateX(-2px); }
-    80% { transform: translateX(2px); }
-    100% { transform: translateX(0); }
+    padding: 1rem 1.5rem 1.5rem;
 }
