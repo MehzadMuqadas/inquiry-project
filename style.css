@@ -352,6 +352,38 @@ p {
     height: auto;
     border-radius: 10px;
 }
+/* Flex layout for image + content */
+.horizontal-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap; /* ensures it works on smaller screens */
+}
+
+.image-column {
+    flex: 0 0 220px;
+    max-width: 220px;
+}
+
+.research-small-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px dashed #c2d4d4;
+    padding: 0.5rem;
+    background-color: #f4f7f9;
+}
+
+.text-column {
+    flex: 1;
+    min-width: 280px;
+}
+
+.text-column h3 {
+    margin-top: 0;
+}
+
 
 .findings-summary {
     margin-top: 4rem;
