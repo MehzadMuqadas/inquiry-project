@@ -652,7 +652,6 @@ p {
         padding: 2rem 1rem;
     }
 }
-
 /* Smooth scrolling enhancement */
 @media (prefers-reduced-motion: no-preference) {
     html {
@@ -673,68 +672,57 @@ p {
     .hamburger {
         display: none;
     }
-    
+
     .section {
         padding: 2rem 0;
         page-break-inside: avoid;
     }
-    
+
     .hero-section {
         padding: 2rem 0;
-    }.scroll-line-container {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 100vh;
-  width: 4px;
-  z-index: 999;
-  pointer-events: none;
+    }
 }
 
-.scroll-line {
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(to bottom, #a3b18a, #588157);
-  box-shadow: 0 0 12px #a3b18a;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: transform 0.3s ease-out;
-}
-
-.scroll-accents {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 1px;
-  height: 100%;
-  transform: translateX(-50%);
-  background-image: radial-gradient(circle, rgba(163, 177, 138, 0.3) 1px, transparent 1px);
-  background-size: 6px 40px;
-  background-repeat: repeat-y;
-  opacity: 0.4;
-  animation: float-accents 6s linear infinite;
-}
-
-@keyframes float-accents {
-  0% { background-position-y: 0px; }
-  100% { background-position-y: -40px; }
-}
-    /* Glowing center scroll line */
-.scroll-line {
+/* === Scroll Line Styles (normal screen only) === */
+.scroll-line-container {
     position: fixed;
     top: 0;
     left: 50%;
-    transform: translateX(-50%) scaleY(0);
-    transform-origin: top;
-    width: 4px;
+    transform: translateX(-50%);
     height: 100vh;
+    width: 4px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.scroll-line {
+    width: 4px;
+    height: 100%;
     background: linear-gradient(to bottom, #B67F4C, #A95C68);
     box-shadow: 0 0 10px #A95C68, 0 0 20px #B67F4C, 0 0 30px rgba(185, 110, 80, 0.7);
-    z-index: 9999;
+    transform: scaleY(0);
+    transform-origin: top;
     border-radius: 2px;
-    pointer-events: none;
     transition: transform 0.2s ease-out;
 }
 
+/* Optional floating accents */
+.scroll-accents {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(185, 110, 80, 0.3) 1px, transparent 1px);
+    background-size: 6px 40px;
+    background-repeat: repeat-y;
+    animation: float-accents 5s linear infinite;
+    opacity: 0.3;
 }
+
+@keyframes float-accents {
+    0% { background-position-y: 0px; }
+    100% { background-position-y: -40px; }
+}
+
